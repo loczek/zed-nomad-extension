@@ -1,0 +1,15 @@
+id = "nomad"
+name = "Nomad"
+version = "0.0.1"
+schema_version = 1
+authors = ["loczek"]
+description = "Nomad Language Server"
+repository = "https://github.com/loczek/zed-nomad-extension"
+
+[language_servers.nomad-ls]
+name = "Nomad Language Server"
+languages = ["Nomad Job"]
+
+[grammars.hcl]
+repository = "https://github.com/MichaHoffmann/tree-sitter-hcl"
+rev = "fad991865fee927dd1de5e172fb3f08ac674d914"
