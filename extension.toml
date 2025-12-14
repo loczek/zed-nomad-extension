@@ -1,6 +1,6 @@
 id = "nomad"
 name = "Nomad"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["loczek"]
 description = "Nomad Language Server"
