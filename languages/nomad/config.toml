@@ -1,6 +1,6 @@
 name = "Nomad Job"
 grammar = "hcl"
-path_suffixes = ["nomad.hcl"]
+path_suffixes = ["nomad", "nomad.hcl"]
 line_comments = ["// "]
 block_comment = ["/*", "*/"]
 autoclose_before = ",}])"
