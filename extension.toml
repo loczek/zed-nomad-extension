@@ -33,4 +33,4 @@ languages = [
 
 [grammars.hcl]
 repository = "https://github.com/MichaHoffmann/tree-sitter-hcl"
-rev = "fad991865fee927dd1de5e172fb3f08ac674d914"
+rev = "64ad62785d442eb4d45df3a1764962dafd5bc98b"
