@@ -8,7 +8,28 @@ repository = "https://github.com/loczek/zed-nomad-extension"
 
 [language_servers.nomad-ls]
 name = "Nomad Language Server"
-languages = ["Nomad Job"]
+languages = [
+    "Nomad ACL",
+    "Nomad Agent",
+    "Nomad Job",
+    "Nomad Namespace",
+    "Nomad Node Pool",
+    "Nomad Resource Quota",
+    "Nomad Variable",
+    "Nomad CSI Volume",
+    "Nomad Dynamic Host Volume"
+]
+
+[language_servers.nomad-ls.language_ids]
+"Nomad ACL" = "nomad-acl"
+"Nomad Agent" = "nomad-agent"
+"Nomad Job" = "nomad-job"
+"Nomad Namespace" = "nomad-namespace"
+"Nomad Node Pool" = "nomad-node-pool"
+"Nomad Resource Quota" = "nomad-resource-quota"
+"Nomad Variable" = "nomad-variable"
+"Nomad CSI Volume" = "nomad-volume-csi"
+"Nomad Dynamic Host Volume" = "nomad-volume-dynamic-host"
 
 [grammars.hcl]
 repository = "https://github.com/MichaHoffmann/tree-sitter-hcl"
