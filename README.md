@@ -2,9 +2,29 @@
 
 A [Zed](https://zed.dev) extension for the [nomad-ls](https://github.com/loczek/nomad-ls) language server.
 
-## Usage
+## Configure file associations
 
-- To use this extension, files must end with the `.nomad` or `.nomad.hcl` extension eg. `loki.nomad` or `loki.nomad.hcl`.
+The only defaults suffixes are `.nomad` and `.nomad.hcl` that match to `Nomad Job`, other languages need to be configured to work e.g.
+
+```jsonc
+// .zed/settings.json
+{
+  "file_types": {
+    "Nomad ACL": ["**/*.nomad.acl"],
+    "Nomad Agent": ["**/*.nomad.client", "**/*.nomad.server"],
+    "Nomad CSI Volume": ["**/*.nomad.csi"],
+    "Nomad Dynamic Host Volume": ["**/*.nomad.dyn"],
+    "Nomad Job": ["**/*.nomad"],
+    "Nomad Namespace": ["**/*.nomad.ns"],
+    "Nomad Node Pool": ["**/*.nomad.np"],
+    "Nomad Resource Quota": ["**/*.nomad.rq"],
+    "Nomad Variable": ["**/*.nomad.var"]
+  }
+}
+```
+
+> [!Note]
+> You may need to restart your editor for the changes to take effect
 
 ## Build and install in Zed
 
